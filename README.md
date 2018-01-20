@@ -1,8 +1,8 @@
 # WordTrie
 
-Total compisite words : 160284
-Longest composite word : 			ethylenediaminetetraacetate
-Second composite longest word : 	electroencephalographicall
+* Total compisite words : 160284
+* Longest composite word : 			ethylenediaminetetraacetate
+* Second composite longest word : 	electroencephalographicall
 
 The project uses a trie data structure to efficiently store and retrieve words from the master list.
 
