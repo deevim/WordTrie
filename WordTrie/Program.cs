@@ -12,7 +12,7 @@ namespace WordTrie
     {
 
         static string maxWord = "";
-        static string secodWord = "";
+        static string secondWord = "";
         static int wordCount = 0;
 
         static void Main(string[] args)
@@ -37,7 +37,7 @@ namespace WordTrie
 
             Console.WriteLine("Word Count : " + wordCount);
             Console.WriteLine("Largest Composite Word : " + maxWord);
-            Console.WriteLine("Second Largest Composite Word : " + secodWord);
+            Console.WriteLine("Second Largest Composite Word : " + secondWord);
             Console.ReadLine();
 
         }
@@ -53,19 +53,19 @@ namespace WordTrie
                 {
                     wordCount++;
 
-                    if (maxWord == secodWord)
+                    if (maxWord == secondWord)
                     {
                         maxWord = currentWord;
                     }
 
-                    if (String.IsNullOrWhiteSpace(secodWord) && currentWord.Length < maxWord.Length)
+                    if (String.IsNullOrWhiteSpace(secondWord) && currentWord.Length < maxWord.Length)
                     {
-                        secodWord = currentWord;
+                        secondWord = currentWord;
                     }
 
                     if (currentWord.Length > maxWord.Length)
                     {
-                        secodWord = maxWord;
+                        secondWord = maxWord;
                         maxWord = currentWord;
                     }
                 }
